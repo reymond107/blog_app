@@ -13,3 +13,151 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.table_heads  {
+    border-collapse: collapse;
+    width: 50%;
+    margin-top: 15%;
+    margin-left: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.table_heads td, .table_heads th {
+    border: 1px solid rgb(220, 230, 245);
+    padding: 10px;
+    text-align: center;
+}
+
+.table_heads tr:nth-child(even){background-color: #d9dadb;}
+
+.table_heads tr:hover {background-color: rgb(17, 124, 151);}
+
+.table_heads th {
+  padding-top: 12px;    
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #3675c9;
+  color: white;
+  text-align: center;
+}
+
+.button {
+    background-color: #2abe9e ;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    left: 62.5%;
+    top: 9.5rem;
+    border-radius: 5px;
+}
+
+.app_name {
+    background-color: #3675c9;
+    color: white;
+    width: 30.4em;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute; 
+    left: 25.5%;
+    top: 9.2rem;
+    box-shadow: 0 4px 8px 0 rgba(42, 131, 190, 0.2), 0 6px 20px 0 rgba(7, 58, 153, 0.19);
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+/* FORMS  */
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.form {
+    background-color: rgb(33, 124, 199);
+    height: 27rem;
+    width: 20rem;
+    border-radius: 5px;
+    color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 33em;
+    margin-top: 5em;
+}
+
+.task {
+    padding: 1rem;
+    font-weight: bold;
+    font-size: large;
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.name {
+    margin-left: 2em;
+    width: 20em;
+    height: 2em;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+.text-field {
+    margin-left: 2em;
+    width: 20em;
+    height: 150px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+label {
+    margin-left: 2rem;
+    text-shadow: 2px 2px 4px #0e1f27;
+}
+
+div {
+    padding-top: 15px;
+}
+
+input[type=submit] {
+    background-color: #06295e;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    margin-left: 14.8em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.index {
+    background-color: #06295e;
+    position: absolute;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    margin-left: 2em;
+    margin-top: -42px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    width: 8em;
+}

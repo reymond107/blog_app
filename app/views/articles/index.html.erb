@@ -1,20 +1,31 @@
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Body</th>
-        </tr>
-    </thead>
+<div 
+    class="app_name">Simple CRUD App | Ruby on Rails</div>                                                                                   
+<div class="article-item">
+    <table class="table_heads">
+        <thead >
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Body</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
 
-    <tbody>
-       <% @articles.each do |article| %> 
-       <tr>
-            <td><%= article.id %></td>
-            <td><%= article.name %></td>
-            <td><%= article.body %></td>
-       </tr>
-       <% end %>
-    </tbody>
-    
-</table>
+        <tbody>
+        <% @articles.each do |article| %>
+            <tr>
+                    <td><%= article.id %></td>
+                    <td><%= article.name %></td>
+                    <td><%= article.body %></td>
+                    <td class="no_line"> 
+                    <%= link_to 'Edit', edit_article_path(article.id) %>
+                    |
+                    <%= link_to 'Delete', delete_article_path(article.id), method: :delete %>
+                    </td>
+            </tr>
+        <% end %>
+        </tbody>    
+    </table>
+</div>
+ 
+<%= link_to "New Article", new_article_path, class: 'button' %>
